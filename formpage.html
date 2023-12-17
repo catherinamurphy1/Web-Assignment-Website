@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<meta charset="UTF-8">
+	<link href ="style.css" rel="stylesheet" type = "text/css"> 
+	<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>	
+<style>
+
+	h2{
+		font-weight: bold;
+		font-family:'Limelight';
+		font-size: 30px;
+	}
+	
+	h4{
+		font-weight: bold;
+		font-family:'Limelight';
+		color:black;
+		font-size: 30px;
+	}
+	
+	form{
+		box-sizing: border-box;
+		padding: 0px;
+		color: white;
+	}
+	
+	fieldset {
+		padding: 30px;
+		background-color:#19747E;
+		position: center;
+		margin-left: 50px;
+		margin-right: 50px;
+		width: 50%;
+		border-radius: 25px;	
+	}
+	
+	.mainnav{
+		width: 100px;
+		height: 20px;
+		position: center;
+	}
+</style>	
+
+	<title>My CV</title>
+
+	<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+</head>
+
+<body>
+
+	<form onsubmit="return validateForm()">
+	 <fieldset>
+		<legend>Have a Query?</legend>
+		
+		Title:<br><input list="title">
+			<datalist id="title" name="title">
+				<option value="Mr">Mr</option>
+				 <option value="Mrs">Mrs</option>
+				 <option value="Ms">Ms</option>
+				 <option value="Dr">Dr</option>
+			</datalist> 
+		<br>
+		<br>
+		<div class="col-25">
+		  <label for="fname">First name: </label> <br>
+		  <input type="text" id="fname" name="fname"><br><br>
+		  </div>
+		  <div class="col-75">
+		  <label for="surname">Surname: </label> <br>
+		  <input type="text" id="surname" name="lname"><br><br>
+		  </div>
+		  <div class="col-35">
+		  <label for="email">Email:</label><br>
+		  <input type="email" id="email" name="email">
+		  </div>
+		  <br>
+		  <br>
+		  <div class="col-75">
+		  <label for="message">Brief description of your query: </label> <br>
+		  <textarea name="message" style="width:600px; height:400px;">
+		  </textarea>
+		  </div>
+		  <br>
+		  
+		  <input type="image" src="submit.jpg" id="submit" alt="Submit" width="80" height="50" >
+		  <input type="image" src="resetmain.jpg" id="resubmit" alt="Reset" width="80" height="50">
+		</fieldset>
+	</form>
+
+	<br>
+
+	<div class="mainnav">
+		<div class="menu6">	
+			<a href="index.html" id="home"><img src="home.png" alt="House Logo" width="30em" height="30em"> <br></a> 
+		</div>
+	</div>
+
+</body>
+
+</html>

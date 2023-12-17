@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<meta charset="UTF-8">
+	<link href ="style.css" rel="stylesheet" type = "text/css"> 
+	<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	h2{
+	font-weight: bold;
+	font-family:'Limelight';
+	font-size: 30px;
+	padding: 0px;
+	}
+	
+	h4{
+	font-weight: bold;
+	font-family:'Limelight';
+	color:black;
+	font-size: 30px;
+	}
+	
+	section{
+	margin: 10%;
+	}
+	
+	.grid-container {
+		display:grid;
+		grid-template-columns: 2fr 3fr 1fr;
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-areas: 
+		"header" "header" "header" "header" "header" "header"
+		"wrappernav" "wrappernav" "main-image" "main-image" "main-image" "right"
+		"wrappernav" "wrappernav" "main-image" "main-image" "main-image" "right"
+		"wrappernav" "wrappernav" "main2" "main2" "main2" "right"
+		"wrappernav" "wrappernav" "main2" "main2" "main2" "right"
+		gap: 0px;
+		background-color: #A9D6E5;
+		padding: 0px;
+		margin: 0px; 
+	 }
+	 
+	 @media only screen and (max-width: 480px) {
+		.grid_container{ 
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr .08fr 3fr 3fr 1fr 1fr 1fr;
+			grid-template-areas:
+			"header"
+			"wrappernav"
+			"main_image"
+			"main2"
+			"right";	
+	}
+	 .main_image{
+	 justify-content: center;
+	 font-size: 5px;
+	 }
+ }
+	
+
+</style>	
+
+	<title>My CV</title>
+
+	<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+</head>
+
+<body>
+
+	<div class="grid-container">
+		<div class="header">
+			<header>
+			<h1>My CV Website</h1>
+			</header>
+	
+			<hr>
+			<hr>
+		</div>
+  
+		<div class="wrappernav">
+			<div class="mainnav">
+				<h4> Menu </h4>
+				<div class="menu1">	
+					<a href="skills.html" id="skills"><img src="book.png" alt="Open Book Logo" width="30em" height="30em"> <br> Skills </a> 
+				</div>
+				<div class="menu2">
+					<img src="cap.png" alt="Graduation Cap Logo" width="30em" height="30em"> <br>Education</a> 
+				</div>
+				<div class="menu3">	
+					<img src="shield.png" alt="Shield Logo" width="30em" height="30em"> <br> Work Experience</a>  
+				</div>
+				<div class="menu4">	
+					<img src="ribbon.png" alt="Award Ribbon Logo" width="30em" height="30em"> <br> Awards & Achievements </a> 
+				</div>
+				<div class="menu5">			
+					<img src="star.png" alt="Star Logo" width="30em" height="30em"> <br> Hobbies </a>
+				</div>
+		
+			<button type="button"
+				onclick="document.getElementById('demo').innerHTML = Date()">
+				Need the Date & Time?
+			</button>
+			
+			<p id="demo"></p>
+			</div>
+		</div>
+ 
+  
+		<div class="main_image">
+			<img src="headshot.jpeg" id="myphoto" alt="girl headshot image" width="150em" height="190em">
+			<div class="vline"></div> 
+				<ul>
+				<li>Name: Catherina Murphy</li>
+				<li>Date of Birth: 17th April 1999</li>
+				<li>Address: Co. Kerry </li>
+				<li>Professional Title: Conference & Event Coodinator</li>
+				<li>Email: 123example@gmail.com</li>
+				<li>Phone Number:  123456789</li>
+				</ul>
+		</div>
+		
+		<div class="right">
+			<h2>Useful Links</h2>
+			<div class="speech-bubble">
+				<a href="mailto:murphy_catherina@yahoo.com"> <h3> Request a Reference? </h3></a>
+			</div>
+			
+			<div class="speech-bubble">
+				<div class="linkedin">
+					<a href="https://ie.linkedin.com/"><img src="linkedin.png" alt="Linkedin Logo" width="60px" height="60px"></a>
+				</div>
+			</div>
+			
+			<div class="speech-bubble">
+				<a href="formpage.html" id="form"> <h3> Have A Query? </h3></a> 
+			</div>
+			
+		</div>
+  
+		<div class="main2">
+			<h2>About Me!</h2>
+			<section>
+			<b>Career Aim:</b>
+			I am looking for a job that is challenging, creative and 
+			striving for new ways of completing tasks in an environment where I can
+			take the opportunity to further my skills through continuous learning. 
+			I have recently obtained my undergraduate college degree at the National 
+			University of Ireland, Galway and I also have recently been working as 
+			a front office receptionist at the Glenlo Abbey Hotel & Estate in Co. 
+			Galway. Throughout my educational and working career I have built up 
+			excellent computer skills especially in the Microsoft Office applications
+			such as Word, Excel and Powerpoint, always pay great attention to detail 
+			as well as developing strong communication skills. 
+			</section>
+		</div>
+	</div>	
+
+</body>
+
+</html>
